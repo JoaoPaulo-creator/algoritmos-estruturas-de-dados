@@ -1,3 +1,5 @@
+// esse codigo foi copiado de um codigo gerado pelo chatGPT
+
 function quickSort2(arr: number[]): number[] {
   if (arr.length <= 1) {
     return arr;

@@ -1,3 +1,5 @@
+// este codigo foi copiado daqui: https://github.com/TheAlgorithms/TypeScript/blob/master/sorts/quick_sort.ts
+
 function partition(
   array: number[],
   left: number = 0,
