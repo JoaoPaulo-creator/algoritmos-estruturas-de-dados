@@ -1,3 +1,15 @@
+/**
+ *
+ * Um buffer circular, fila circular, buffer cíclico ou buffer de anel é uma estrutura de dados que usa um único buffer de tamanho fixo como se estivesse conectado de ponta a ponta. Essa estrutura se presta facilmente ao buffer de fluxos de dados.
+ * @see https://pt.wikipedia.org/wiki/Circular_buffer
+ *
+ *
+ *
+ * Uma consequência do circular queue, é que quando está cheio, os elementos mais antifos serão sobreescritos.
+ *
+ * Caso não seja desejável a sobreescrita dos dados mais antigos, deverá ser feito um tratamento e talvez lançar uma execeção
+ */
+
 class CircularQueue {
   arr: number[] | null;
   topOfQueue: number;
