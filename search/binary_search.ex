@@ -19,6 +19,7 @@ defmodule Ok do
 end
 
 defmodule Optimal do
+  @spec search(list, term) :: boolean
   def search(list, target), do: binary_search(list, target, 0, length(list) - 1)
 
   defp binary_search(list, target, low, high) do
