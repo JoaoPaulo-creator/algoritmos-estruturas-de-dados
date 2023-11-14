@@ -1,0 +1,13 @@
+
+# Ignore all objects and binaries from all languages
+*.[oa]
+
+# Allow only language file extensions
+*.c
+*.cpp
+*.h
+*.hpp
+*.java
+*.py
+*.rb
+*.hi
