@@ -1,3 +1,8 @@
+/*
+recursão é uma forma de criar loops sem a necessidade de invocar um for loop ou while
+Nem sempre recursão é algo a ser utilizado, pois pode gerar extrema lentidão para resolver uma operação
+*/
+
 package main
 
 import "fmt"
@@ -27,6 +32,6 @@ func fibMap(n int) int {
 }
 
 func main() {
-	result := fibMap(10)
+	result := fibMap(110)
 	fmt.Println(result)
 }
