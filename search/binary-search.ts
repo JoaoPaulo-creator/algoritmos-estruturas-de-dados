@@ -9,9 +9,10 @@ export function binarySearchIterative(
   arr: number[],
   target: number
 ): number | null {
-  let left = arr[0]; // apenas inicia em 0
-  let right = arr.length - 1; // essa variavel vai receber o tamanho do array
+  let left = arr[0]; // recebe o primeiro elemento do array
+  let right = arr.length - 1; // recebe o ultimo elemento do array
 
+  // retorna -1 se o array estiver vazio ou se o target for menor que o primeiro elemento ou maior que o ultimo elemento
   if (arr.length === 0) return -1;
   if (target < arr[0] || target > arr[right]) return -1;
 
@@ -22,11 +23,11 @@ export function binarySearchIterative(
     const mid = Math.floor((left + right) / 2); // o match floor vai arredondar para baixo, caso o resultado da divisao seja um numero quebrado
     console.log("mid: ", mid);
     if (arr[mid] === target) {
-      return mid; // se encontrar o index do target, retorna seu index
+      return mid; // se encontrar o index do target, retorna seu index e a busca para
     } else if (arr[mid] < target) {
-      left = mid + 1; // o target esta na metade da direita do array
+      left = mid + 1; // left agora tem o valor do indice a direita do mid, indicando que o target esta na metade da direita
     } else {
-      right = mid - 1; // o target esta na metade esquerda do array
+      right = mid - 1; // right agora tem o valor do indice a esquerda do mid, indicando que o target esta na metade da esquerda
     }
   }
 
