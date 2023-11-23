@@ -1,5 +1,5 @@
 Listas ligadas sao uma estrutura de dados linear, conhecida como estrutura de dados baseada em nodes/nos.
-O node neste caso, seria o node como container de dados
+O node neste caso, seria o node como container de dados, que se encaixam no modelo FIFO (first in, first out)
 
 O primeiro elemento da lista ligada eh o head, e o ultimo eh o tail.
 

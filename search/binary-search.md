@@ -53,7 +53,7 @@ mid = array[9] // que vale 21
 
 Como o valor do target eh superior a 21, ou seja, ao mid, entao o mid sera recalculado. O calculo sera:
 
-mid = low + (low - high) / 2 // rebendo a soma do novo valor de low + o valor antigo de mid
+mid = low + (high - low) / 2 // rebendo a soma do novo valor de low + o valor antigo de mid
 entao mid agora tem o seguin valor: mid = array[14] // que vale 35, sendo superior ao target
 
 Valores atuais
