@@ -89,7 +89,7 @@ class CircularQueue {
   }
 }
 
-function main() {
+function main_() {
   const circularQueue = new CircularQueue(5);
   console.log(circularQueue.isEmpty());
   console.log(circularQueue.isFull());
@@ -118,4 +118,4 @@ function main() {
   circularQueue.deleteQueue();
 }
 
-main();
+main_();
