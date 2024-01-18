@@ -1,13 +1,8 @@
-// import { BinaryNode } from "./types/binarynode";
-
-
 /**
  *
 * a ideia eh comparar estruturalmente se duas arvores binarias sao iguais
  *
  * */
-
-
 
 class BinaryNode<T> {
   value: T;
@@ -38,6 +33,11 @@ function compare(a: BinaryNode<number> | null, b: BinaryNode<number> | null,): b
     return false
   }
 
+  // EDIT: na verdade, os ifs acima estao validando as subtrees, ou seja, quando uma arvore tem seu nodes/filhos/leafs, esses nodes representam uma sub arvore
+  // pois os nodes filhos tambem poderao ter seus filhos. Dito isso, os ifs acimas estao caminhando desde o root ate um node null/undefined, na arvore em questao.
+  // Ambos validam a estrutura da arvore
+
+
   // nas condicionais acima, esta sendo levado em consideracao que a arvore pode ser ou nao nula, ou seja, nao verifica diretamente os valores delas, ou seja,
   // a arvore pode nao ser nula, porem ate o momento nao foi feito a verificacao dos valores, caso ambas sejam diferente de null.
   // essa verificacao sera realizada logo abaixo
@@ -46,6 +46,9 @@ function compare(a: BinaryNode<number> | null, b: BinaryNode<number> | null,): b
   // nessa condicinal, leva-se em consideracao que as arvores possuem filhos e nodes, e entao esses valores estao sendo diretamente verificados
   // se o valor de um dos nodes for diferente em uma das arvors, logo estruturalmente as arvores serao diferentes, portanto
   // o return sera false
+  //
+  //
+  // EDIT: esse if valida os valores que estao nos nodes da arvore
   if(a.value !== b.value) {
     return false
   }
